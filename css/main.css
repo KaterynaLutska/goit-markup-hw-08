@@ -363,13 +363,13 @@ body {
   background: #f5f4fa;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-work-example {
     display: none;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-title {
     font-size: 28px;
     line-height: 1.17;
@@ -377,7 +377,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-team {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -421,7 +421,7 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .hero {
     background-size: cover;
     background-repeat: no-repeat;
@@ -525,7 +525,7 @@ body {
     width: calc((100% - 30px * 3) / 4);
     margin-right: 30px;
   }
-  .work-description:not(:last-child) {
+  .work-description-item:last-child {
     margin-right: 0px;
   }
 }
@@ -551,7 +551,7 @@ body {
   padding: 24px 0 25px 0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .logo {
     font-size: 24px;
     line-height: 1.16;
@@ -908,7 +908,7 @@ button {
           justify-content: center;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .team-card {
     width: 100%;
   }
@@ -967,7 +967,7 @@ a:focus .client-icon {
   border-color: #2196f3;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .lis.client-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

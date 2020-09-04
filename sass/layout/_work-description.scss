@@ -35,7 +35,7 @@
   }
 }
 
-@include for-tablet {
+@include only-tablet {
   .work-description {
     display: flex;
     flex-wrap: wrap;
@@ -64,7 +64,7 @@
       width: calc((100% - 30px * 3) / 4);
       margin-right: 30px;
     }
-    &:not(:last-child) {
+    &-item:last-child {
       margin-right: 0px;
     }
   }

@@ -363,13 +363,13 @@ body {
   background: #f5f4fa;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-work-example {
     display: none;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-title {
     font-size: 28px;
     line-height: 1.17;
@@ -377,7 +377,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-team {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -414,7 +414,7 @@ body {
   padding: 24px 0 25px 0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .logo {
     font-size: 24px;
     line-height: 1.16;
