@@ -1,0 +1,39 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+  height: 600px;
+  text-align: center;
+  background: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/hero.jpg");
+  background-position: center;
+  border-top: 1px solid #ececec;
+  overflow: hidden;
+
+  @include for-phone {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+}
+
+.hero-title {
+  margin-bottom: 30px;
+
+  @include font(900, 44px, 0.06em, $primary-font-family);
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @include for-phone {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}

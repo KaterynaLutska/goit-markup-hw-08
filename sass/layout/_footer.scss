@@ -1,0 +1,29 @@
+footer {
+  background-color: #2f303a;
+}
+
+.footer-container {
+  // display: flex;
+  align-items: baseline;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  & > div:not(:last-child) {
+    width: calc((50% - 45px) / 2);
+    margin-right: 30px;
+  }
+
+  & > div:last-child {
+    width: calc(50% - 15px);
+  }
+}
+
+.footer-title {
+  display: block;
+  margin-bottom: 20px;
+
+  @include font(700, 14px, 0.03em, $primary-font-family);
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}

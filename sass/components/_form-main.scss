@@ -1,0 +1,125 @@
+.form {
+  width: 100%;
+  height: 40px;
+  padding-left: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  &:focus {
+    border: 1px solid $accent-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
+  }
+}
+
+.options {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  display: block;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &::placeholder {
+    @include font(400, 12px, 0.01em, $primary-font-family);
+    line-height: 1.16;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
+.textarea-comments {
+  width: 100%;
+  height: 120px;
+  outline: none;
+  padding: 12px 16px;
+
+  @include font(400, 14px, 0.01em, $primary-font-family);
+  line-height: 1.14;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+textarea:focus {
+  border: 1px solid $accent-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+}
+
+.policy {
+  @include font(400, 14px, 0.03em, $primary-font-family);
+  line-height: 1.71px;
+}
+
+.js-speaker-form {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal-wrap {
+  position: relative;
+}
+
+.svg-modal {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  transform: translate(-50%, -50%);
+
+  width: 18px;
+  height: 18px;
+}
+
+.wrap-policy {
+  text-align: center;
+}
+
+.policy-link {
+  display: inline-block;
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.check-input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+}
+
+.check-icon {
+  display: inline-block;
+  margin-right: 8px;
+
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+
+.check-input:checked + .check-icon {
+  border-style: none;
+  background-image: url(../images/iconcheck_1.svg);
+  background-size: contain;
+  background-color: $accent-color;
+}
+
+.form:focus ~ .svg-modal {
+  fill: $accent-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+}

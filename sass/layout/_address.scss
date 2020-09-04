@@ -1,0 +1,78 @@
+.address {
+  display: none;
+
+  @include for-desktop {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-items {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .address-items-link {
+    @include font(500, 14px, 0.02em, $primary-font-family);
+    line-height: 1.14;
+    transition-property: color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &:hover svg,
+    &:focus svg {
+      fill: $accent-color;
+    }
+  }
+
+  .address-icon {
+    margin-right: 10px;
+    align-items: baseline;
+    vertical-align: middle;
+
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
+  }
+}
+
+.address-footer {
+  align-items: flex-start;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 9px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+
+  &-email,
+  &-telephone {
+    margin-bottom: 9px;
+
+    @include font(400, 14px, 0.03em, $primary-font-family);
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+
+  &-telephone {
+    margin-bottom: 0;
+  }
+}

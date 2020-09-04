@@ -1,0 +1,28 @@
+@mixin centerFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin font($fw, $fs, $ls, $ff) {
+  font-weight: $fw;
+  font-size: $fs;
+  letter-spacing: $ls;
+  font-family: $ff;
+}
+
+@mixin for-phone {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

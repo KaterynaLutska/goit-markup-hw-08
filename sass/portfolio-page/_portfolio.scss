@@ -1,0 +1,15 @@
+.portfolio {
+  &-container {
+    padding-top: 94px;
+    padding-bottom: 93px;
+  }
+
+  &-title {
+    display: none;
+  }
+
+  &-button {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}

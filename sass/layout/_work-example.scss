@@ -1,0 +1,26 @@
+.work-example {
+  position: relative;
+
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-title {
+    display: block;
+    position: absolute;
+    bottom: 0;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    @include font(400, 14px, 0.03em, $primary-font-family);
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

@@ -1,0 +1,39 @@
+.section {
+  padding: 60px 0;
+
+  &-title {
+    margin-bottom: 50px;
+    color: $title-text-color;
+    text-align: center;
+  }
+  &-work-example {
+    padding-bottom: 94px;
+  }
+  &-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background: #f5f4fa;
+  }
+}
+
+.section {
+  &-work-example {
+    @include for-phone {
+      display: none;
+    }
+  }
+  &-title {
+    @include for-phone {
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 30px;
+    }
+  }
+  &-team {
+    @include for-phone {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+  }
+}

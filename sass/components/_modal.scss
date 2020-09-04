@@ -1,0 +1,48 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  width: 100%;
+  max-width: 528px;
+  min-height: 582px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-items {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+
+  @include font(400, 12px, 0.03em, $primary-font-family);
+  line-height: 1.16;
+
+  & > label {
+    margin-bottom: 4px;
+  }
+
+  &last {
+    margin-bottom: 0;
+  }
+}
+
+.modal-heder {
+  @include font(700, 20px, 0.03em, $primary-font-family);
+  line-height: 1.15;
+  text-align: center;
+
+  margin-bottom: 12px;
+  color: $title-text-color;
+
+  &-label {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+}

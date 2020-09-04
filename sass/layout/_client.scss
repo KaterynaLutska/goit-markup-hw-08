@@ -1,0 +1,55 @@
+.client-link {
+  margin-right: 30px;
+  width: calc((100% - 30px * 5) / 6);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+
+  transition-property: border;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+
+  &-icon {
+    box-sizing: content-box;
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: $transition-duration;
+    transition-timing-function: $timing-function;
+  }
+}
+
+a:hover .client-icon,
+a:focus .client-icon {
+  fill: $accent-color;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: $accent-color;
+}
+
+@include for-phone {
+  .lis.client-list {
+    flex-wrap: wrap;
+  }
+  .client-link {
+    width: 210px;
+    height: 90px;
+  }
+  .client {
+    width: calc((100% - 30px) / 2);
+  }
+}

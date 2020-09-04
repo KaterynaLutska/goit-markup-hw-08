@@ -1,0 +1,26 @@
+.logo {
+  @include font(700, 26px, 0.03em, $secondary-font-family);
+
+  line-height: 1.19;
+  color: #000000;
+
+  &-blue {
+    color: $accent-color;
+  }
+
+  &-white {
+    color: white;
+  }
+
+  &.header {
+    // margin-right: 85px;
+    padding: 24px 0 25px 0;
+  }
+}
+
+.logo {
+  @include for-phone {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
