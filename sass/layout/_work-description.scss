@@ -64,7 +64,7 @@
       width: calc((100% - 30px * 3) / 4);
       margin-right: 30px;
     }
-    &:nth-last-child {
+    &:not(:last-child) {
       margin-right: 0px;
     }
   }

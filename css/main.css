@@ -432,18 +432,18 @@ body {
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   letter-spacing: 0.06em;
   font-family: Roboto, sans-serif;
-  line-height: 1.36;
+  line-height: 1.61;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1200px) {
   .hero-title {
-    font-size: 26px;
-    line-height: 1.61;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -525,7 +525,7 @@ body {
     width: calc((100% - 30px * 3) / 4);
     margin-right: 30px;
   }
-  .work-description:nth-last-child {
+  .work-description:not(:last-child) {
     margin-right: 0px;
   }
 }
