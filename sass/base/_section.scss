@@ -2,16 +2,18 @@
   padding: 60px 0;
 
   &-title {
-    margin-bottom: 50px;
+    @include font(700, 28px, 0.03em, $primary-font-family);
     color: $title-text-color;
     text-align: center;
+    line-height: 1.17;
+    margin-bottom: 30px;
   }
   &-work-example {
     padding-bottom: 94px;
   }
   &-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background: #f5f4fa;
   }
@@ -23,17 +25,17 @@
       display: none;
     }
   }
-  &-title {
-    @include for-phone {
-      font-size: 28px;
-      line-height: 1.17;
-      margin-bottom: 30px;
-    }
-  }
   &-team {
     @include for-phone {
       padding-top: 60px;
       padding-bottom: 30px;
+    }
+  }
+  &-title {
+    @include for-desktop {
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
     }
   }
 }
