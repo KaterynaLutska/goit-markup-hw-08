@@ -4,23 +4,74 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
-  height: 600px;
+  // height: 600px;
   text-align: center;
-  background: #c4c4c4;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url("../images/hero.jpg");
+  // background: #c4c4c4;
   background-position: center;
   border-top: 1px solid #ececec;
   overflow: hidden;
+  background-size: cover;
+}
 
-  @include for-phone {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
+.hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../../images/phone/Headerimg.jpg");
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/phone/Headerimg@2x.jpg");
+  }
+
+  height: 400px;
+  padding-top: 116px;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/tablet/Headertabletimg.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../../images/tablet/Headertabletimg@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../../images/hero.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../../images/herodecktop@2x.jpg");
+    }
+    height: 600px;
+    padding-top: 200px;
   }
 }
 

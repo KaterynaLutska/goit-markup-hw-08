@@ -35,7 +35,7 @@
   }
 }
 
-@include only-tablet {
+@include for-tablet {
   .work-description {
     display: flex;
     flex-wrap: wrap;
