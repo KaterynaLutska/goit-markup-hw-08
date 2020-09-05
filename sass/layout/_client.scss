@@ -1,21 +1,54 @@
-.client-link {
-  margin-right: 30px;
-  width: calc((100% - 30px * 5) / 6);
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  &:last-child {
-    margin-right: 0;
+.client-list > li {
+  @include for-phone {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.client-list > li {
+  @include for-tablet {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.client-list > li {
+  @include for-desktop {
+    flex-wrap: nowrap;
+    width: calc((100% - 30px * 5) / 6);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .client-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 170px;
+  @include centerFlex;
   height: 90px;
   border-radius: 4px;
-  border: 1px solid #afb1b8;
+  border: 1px solid $primary-text-color;
 
   transition-property: border;
   transition-duration: $transition-duration;
@@ -23,7 +56,7 @@
 
   &-icon {
     box-sizing: content-box;
-    fill: #afb1b8;
+    fill: $primary-text-color;
 
     transition-property: fill;
     transition-duration: $transition-duration;
@@ -39,17 +72,4 @@ a:focus .client-icon {
 .client-link:hover,
 .client-link:focus {
   border-color: $accent-color;
-}
-
-@include for-phone {
-  .lis.client-list {
-    flex-wrap: wrap;
-  }
-  .client-link {
-    width: 210px;
-    height: 90px;
-  }
-  .client {
-    width: calc((100% - 30px) / 2);
-  }
 }
