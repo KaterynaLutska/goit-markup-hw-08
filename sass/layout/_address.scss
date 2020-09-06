@@ -44,21 +44,21 @@
 }
 
 .address-footer {
-  align-items: flex-start;
   display: inline-block;
   margin-top: 20px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
-  font-size: 14px;
+  @include font(400, 14px, 0.03em, $primary-font-family);
   line-height: 1.71;
   color: #ffffff;
   font-style: normal;
-  font-weight: 400;
+
+  &-email {
+    margin-bottom: 8px;
+  }
 
   &-email,
   &-telephone {
-    margin-bottom: 9px;
-
     @include font(400, 14px, 0.03em, $primary-font-family);
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
@@ -70,9 +70,5 @@
     &:focus {
       color: #2196f3;
     }
-  }
-
-  &-telephone {
-    margin-bottom: 0;
   }
 }

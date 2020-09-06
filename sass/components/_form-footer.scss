@@ -17,3 +17,26 @@
   border-radius: 4px;
   background-color: #2f303a;
 }
+
+.form-footer {
+  display: block;
+  input {
+    width: 450px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@include for-desktop {
+  .form-footer {
+    display: inline-flex;
+    & > input {
+      width: 358px;
+      margin-right: 12px;
+    }
+  }
+}
+
+.form-footer-button {
+  display: inline-block;
+}

@@ -3,19 +3,16 @@ footer {
 }
 
 .footer-container {
-  // display: flex;
-  align-items: baseline;
   padding-bottom: 60px;
   padding-top: 60px;
-
-  & > div:not(:last-child) {
-    width: calc((50% - 45px) / 2);
-    margin-right: 30px;
+  text-align: center;
+  @include for-desktop {
+    text-align: start;
   }
+}
 
-  & > div:last-child {
-    width: calc(50% - 15px);
-  }
+.footer-social {
+  padding-bottom: 60px;
 }
 
 .footer-title {
@@ -26,4 +23,38 @@ footer {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.footer-container {
+  @include for-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 85px;
+    padding-left: 76px;
+  }
+}
+
+.address-footer-wrap {
+  @include for-tablet {
+    margin-right: 165px;
+  }
+  margin-bottom: 60px;
+}
+
+.footer-container {
+  @include for-desktop {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    & > div:not(:last-child) {
+      width: calc((50% - 45px) / 2);
+      margin-right: 30px;
+    }
+
+    & > div:last-child {
+      width: calc(50% - 15px);
+    }
+  }
 }
