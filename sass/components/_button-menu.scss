@@ -1,8 +1,15 @@
 .button-menu {
+  display: flex;
   align-items: center;
   padding: 0;
-
   background-color: #fff;
+
+  @include for-tablet {
+    display: none;
+  }
+  @include for-desktop {
+    display: none;
+  }
 }
 
 .icon-cross {

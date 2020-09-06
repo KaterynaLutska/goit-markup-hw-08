@@ -7,7 +7,9 @@
 }
 
 .navigation.list {
-  display: none;
+  @include for-phone {
+    display: none;
+  }
 
   @include for-desktop {
     display: block;
@@ -62,9 +64,4 @@
 
 .navigation-items:hover::after {
   opacity: 0;
-}
-
-.naviagtion-phone {
-  display: flex;
-  justify-content: right;
 }

@@ -4,6 +4,7 @@
 @import "./utils/mixins.scss";
 @import "./base/common.scss";
 @import "./base/body.scss";
+@import "./components/button-menu.scss";
 @import "./base/section.scss";
 @import "./layout/page-header.scss";
 @import "./components/logo.scss";
@@ -17,3 +18,5 @@
 @import "./portfolio-page/portfolio-btn.scss";
 @import "./portfolio-page/cards.scss";
 @import "./portfolio-page/card-animation.scss";
+@import "./components/form-main.scss";
+@import "./components/form-footer.scss";

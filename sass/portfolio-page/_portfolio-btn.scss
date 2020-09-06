@@ -32,3 +32,27 @@
     cursor: pointer;
   }
 }
+
+.portfolio-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @include for-tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include for-desktop {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}
+
+.portfolio-button-items {
+  @include for-phone {
+    margin-bottom: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}

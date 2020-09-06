@@ -401,21 +401,33 @@ body {
   }
 }
 
-.flexbox {
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
 
 .button-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
   background-color: #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .button-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-menu {
+    display: none;
+  }
 }
 
 .icon-cross {
@@ -582,9 +594,10 @@ body {
 
 .logo {
   font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
+  font-size: 24px;
+  letter-spacing: 0.03;
   font-family: Raleway, sans-serif;
+  line-height: 1.16;
   line-height: 1.19;
   color: #000000;
 }
@@ -601,10 +614,16 @@ body {
   padding: 24px 0 25px 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
-    font-size: 24px;
-    line-height: 1.16;
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    margin-right: 85px;
   }
 }
 
@@ -696,27 +715,25 @@ button {
   height: 11px;
 }
 
-.address {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    display: none;
   }
 }
 
-.address-items {
-  display: inline-block;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-items {
+    display: inline;
+  }
 }
 
-.address-items:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .address-items {
+    display: inline-block;
+  }
+  .address-items:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .address .address-items-link {
@@ -805,8 +822,10 @@ button {
   line-height: 1.14;
 }
 
-.navigation.list {
-  display: none;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .navigation.list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -868,15 +887,6 @@ button {
   opacity: 0;
 }
 
-.naviagtion-phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
 .container {
   width: 100%;
   padding-left: 15px;
@@ -896,6 +906,10 @@ button {
   .container {
     width: 768px;
   }
+}
+
+.portfolio-container {
+  padding-bottom: 60px;
 }
 
 .work-example-list {

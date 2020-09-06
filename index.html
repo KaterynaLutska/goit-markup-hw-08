@@ -9,31 +9,13 @@
   <body>
     <header>
       <!--Головна навігація-->
-      <!-- <div class="container flexbox">   
+      <div class="container page-header">
         <nav class="navigation">
-          <div class="naviagtion-phone">
-            <a href="./" class="logo header list">
-              <span class="logo-blue">Web</span>
-              <span class="logo-dark">Studio</span>
-            </a>
-            <button type="button" class="button-menu">
-              <svg
-                class="menu"
-                width="40"
-                height="40"
-                aria-label="Переключатель мобильного меню"
-              >
-                <use
-                  class="icon-cross"
-                  href="./images/sprite.svg#icon-cross-icon"
-                ></use>
-                <use
-                  class="icon-menu"
-                  href="./images/sprite.svg#icon-menu-icon"
-                ></use>
-              </svg>
-            </button>
-          </div>
+          <a href="./" class="logo header list">
+            <span class="logo-blue">Web</span>
+            <span class="logo-dark">Studio</span>
+          </a>
+
           <ul class="navigation list">
             <li class="navigation-items">
               <a href="" class="navigation-items-link current">Студия</a>
@@ -66,7 +48,24 @@
             </a>
           </li>
         </ul>
-      </div> -->
+        <button type="button" class="button-menu">
+          <svg
+            class="menu"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-cross-icon"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/sprite.svg#icon-menu-icon"
+            ></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <!--main-section-->
     <main>
@@ -586,7 +585,7 @@
     </footer>
     <!--  -->
     <!-- Modal window -->
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <form class="js-speaker-form" autocomplete="off" method="post">
           <h3 class="modal-heder">Оставьте свои данные, мы вам перезвоним</h3>
@@ -686,6 +685,6 @@
             e.currentTarget.reset();
           });
       })();
-    </script> -->
+    </script>
   </body>
 </html>
