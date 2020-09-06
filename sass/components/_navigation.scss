@@ -27,22 +27,22 @@
   &:not(:last-child) {
     margin-right: 50px;
   }
+}
 
-  &-link.current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    opacity: 1;
+.navigation-items-link.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 1;
 
-    height: 4px;
-    width: 100%;
-    background-color: $accent-color;
-    border-radius: 2px;
-    bottom: -1px;
-    transition-property: babackground-color;
-    transition-duration: $timing-function;
-    transition-timing-function: $timing-function;
-  }
+  height: 4px;
+  width: 100%;
+  background-color: $accent-color;
+  border-radius: 2px;
+  bottom: -1px;
+  transition-property: babackground-color;
+  transition-duration: $timing-function;
+  transition-timing-function: $timing-function;
 }
 
 .navigation-items-link {

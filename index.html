@@ -18,7 +18,7 @@
 
           <ul class="navigation list">
             <li class="navigation-items">
-              <a href="" class="navigation-items-link current">Студия</a>
+              <a href="./" class="navigation-items-link current">Студия</a>
             </li>
             <li class="navigation-items">
               <a href="./portfolio.html" class="navigation-items-link"
@@ -48,7 +48,11 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="button-menu">
+        <button type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button>
           <svg
             class="menu"
             width="40"
@@ -65,6 +69,40 @@
             ></use>
           </svg>
         </button>
+        <div class="menu-container" id="menu-container" data-menu>
+            <ul class="list menu-for-phone">
+              <li class="menu-for-phone-item line">
+                <a href="./" class="line-menu current">Студия</a>
+              </li>
+              <li class="menu-for-phone-item">
+                <a href="./portfolio.html" class="navigation-items-link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-for-phone-item">
+                <a href="" class="navigation-items-link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="address-for-phone list">
+              <li class="address-for-phone-item">
+                <a href="mailto:info@devstudio.com" class="address-items-link">
+                  <svg class="address-icon" width="16" height="11">
+                    <use href="./images/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="address-for-phone-item">
+                <a href="tel:+380961111111" class="address-items-link">
+                  <svg class="address-icon" width="10" height="15">
+                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!--main-section-->
@@ -686,5 +724,6 @@
           });
       })();
     </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

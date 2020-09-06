@@ -343,7 +343,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.button-menu {
+.menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,18 +355,113 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .button-menu {
+  .menu-button {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .button-menu {
+  .menu-button {
     display: none;
   }
 }
 
-.icon-cross {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.menu-container.is-open {
+  display: block;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  padding-bottom: 60px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.menu-for-phone {
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-family: Roboto, sans-serif;
+  line-height: 1.14;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-family: Roboto, sans-serif;
+  color: #212121;
+}
+
+.menu-for-phone-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.menu-for-phone-item.line {
+  display: inline-block;
+  position: relative;
+}
+
+.address-for-phone {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-family: Roboto, sans-serif;
+  color: #757575;
+}
+
+.address-for-phone-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.line-menu.current {
+  color: #2196f3;
+}
+
+.line-menu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 1;
+  height: 4px;
+  width: 100%;
+  background-color: #2196f3;
+  border-radius: 2px;
+  bottom: -12px;
+  -webkit-transition-property: babackground-color;
+  transition-property: babackground-color;
+  -webkit-transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
@@ -432,6 +527,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .logo {
