@@ -1265,6 +1265,12 @@ footer {
   .form-footer > input {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .address-footer-wrap,
+  .footer-social {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
