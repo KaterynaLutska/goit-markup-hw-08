@@ -24,11 +24,14 @@
     @include for-phone {
       display: none;
     }
+    @include for-tablet {
+      display: none;
+    }
   }
   &-team {
-    @include for-phone {
-      padding-top: 60px;
-      padding-bottom: 30px;
+    @include for-desktop {
+      padding-top: 94px;
+      padding-bottom: 94px;
     }
   }
   &-title {
@@ -37,5 +40,8 @@
       line-height: 1.16;
       margin-bottom: 50px;
     }
+  }
+  @include for-desktop {
+    padding: 94px 0px;
   }
 }

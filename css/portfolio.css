@@ -374,10 +374,16 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-work-example {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .section-team {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -386,6 +392,12 @@ body {
     font-size: 36px;
     line-height: 1.16;
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
   }
 }
 
