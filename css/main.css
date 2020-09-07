@@ -1155,22 +1155,14 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .client-list > li {
   width: calc((100% - 30px) / 2);
-  margin-right: 30px;
   margin-bottom: 30px;
-}
-
-.client-list > li:nth-child(2n) {
-  margin-right: 0;
-}
-
-.client-list > li:nth-last-child(-n + 2) {
-  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
