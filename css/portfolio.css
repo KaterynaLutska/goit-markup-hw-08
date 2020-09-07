@@ -1088,11 +1088,22 @@ footer {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+.portfolio-button-items {
+  margin-bottom: 15px;
+}
+
+.portfolio-button-items:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-button-items {
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
-  .portfolio-button-items:nth-last-child(-n + 2) {
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-button-items {
     margin-bottom: 0;
   }
 }
@@ -1105,14 +1116,8 @@ footer {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .card-item {
-    width: 450px;
-    margin-right: 0;
-  }
-  .card-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.card-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
