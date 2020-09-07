@@ -1,8 +1,6 @@
 .logo {
-  @include font(700, 24px, 0.03, $secondary-font-family);
+  @include font(700, 24px, 0.03em, $secondary-font-family);
   line-height: 1.16;
-
-  line-height: 1.19;
   color: #000000;
 
   &-blue {
@@ -25,5 +23,6 @@
   @include for-desktop {
     font-size: 26px;
     margin-right: 85px;
+    line-height: 1.19;
   }
 }

@@ -538,10 +538,9 @@ body.modal-open {
 .logo {
   font-weight: 700;
   font-size: 24px;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   font-family: Raleway, sans-serif;
   line-height: 1.16;
-  line-height: 1.19;
   color: #000000;
 }
 
@@ -567,6 +566,7 @@ body.modal-open {
   .logo.header {
     font-size: 26px;
     margin-right: 85px;
+    line-height: 1.19;
   }
 }
 
