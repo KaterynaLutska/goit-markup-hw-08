@@ -14,11 +14,6 @@
   }
 }
 
-.options {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
 textarea {
   display: block;
   resize: none;
@@ -54,9 +49,23 @@ textarea:focus {
   transition-timing-function: $timing-function;
 }
 
+.options {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .policy {
   @include font(400, 14px, 0.03em, $primary-font-family);
   line-height: 1.71px;
+}
+.policy-link {
+  display: inline;
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.wrap-policy {
+  text-align: center;
 }
 
 .js-speaker-form {
@@ -77,16 +86,6 @@ textarea:focus {
 
   width: 18px;
   height: 18px;
-}
-
-.wrap-policy {
-  text-align: center;
-}
-
-.policy-link {
-  display: inline-block;
-  color: $accent-color;
-  text-decoration: underline;
 }
 
 .check-input {

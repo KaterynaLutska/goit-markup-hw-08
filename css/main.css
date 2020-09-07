@@ -343,6 +343,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .section {
   padding: 60px 0;
 }
@@ -453,14 +457,16 @@ body {
   z-index: 1;
 }
 
-.menu-container.is-open {
-  display: block;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  padding-bottom: 60px;
-  padding-top: 60px;
-  text-align: center;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu-container.is-open {
+    display: block;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    padding-bottom: 60px;
+    padding-top: 60px;
+    text-align: center;
+  }
 }
 
 .menu-for-phone {
@@ -1489,6 +1495,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -1512,11 +1519,6 @@ footer {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.options {
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 textarea {
@@ -1588,12 +1590,27 @@ textarea:focus {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.options {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .policy {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
   font-family: Roboto, sans-serif;
   line-height: 1.71px;
+}
+
+.policy-link {
+  display: inline;
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.wrap-policy {
+  text-align: center;
 }
 
 .js-speaker-form {
@@ -1613,16 +1630,6 @@ textarea:focus {
           transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
-}
-
-.wrap-policy {
-  text-align: center;
-}
-
-.policy-link {
-  display: inline-block;
-  color: #2196f3;
-  text-decoration: underline;
 }
 
 .check-input {
