@@ -52,6 +52,7 @@ textarea:focus {
 .options {
   margin-top: 20px;
   margin-bottom: 30px;
+  // display: block;
 }
 
 .policy {
@@ -59,7 +60,7 @@ textarea:focus {
   line-height: 1.71px;
 }
 .policy-link {
-  display: inline;
+  display: inline-block;
   color: $accent-color;
   text-decoration: underline;
 }
@@ -96,7 +97,6 @@ textarea:focus {
 }
 
 .check {
-  display: inline-flex;
   align-items: center;
 }
 
