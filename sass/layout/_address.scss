@@ -1,19 +1,16 @@
 .address {
-  @include for-phone {
-    display: none;
-  }
+  display: none;
+
   @include for-tablet {
-    &-items {
-      display: inline;
+    display: block;
+    &-items:not(:last-child) {
+      margin-bottom: 10px;
     }
   }
   @include for-desktop {
-    &-items {
-      display: inline-block;
-
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
+    display: flex;
+    &-items:not(:last-child) {
+      margin-right: 30px;
     }
   }
 

@@ -7,10 +7,11 @@
 }
 
 .navigation.list {
-  @include for-phone {
-    display: none;
-  }
+  display: none;
 
+  @include for-tablet {
+    display: block;
+  }
   @include for-desktop {
     display: block;
   }

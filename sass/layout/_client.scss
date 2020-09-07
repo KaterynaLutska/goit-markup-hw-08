@@ -6,16 +6,14 @@
 }
 
 .client-list > li {
-  @include for-phone {
-    width: calc((100% - 30px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
+  width: calc((100% - 30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
@@ -53,15 +51,15 @@
   transition-property: border;
   transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
+}
 
-  &-icon {
-    box-sizing: content-box;
-    fill: #afb1b8;
+.client-icon {
+  box-sizing: content-box;
+  fill: #afb1b8;
 
-    transition-property: fill;
-    transition-duration: $transition-duration;
-    transition-timing-function: $timing-function;
-  }
+  transition-property: fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
 }
 
 a:hover .client-icon,

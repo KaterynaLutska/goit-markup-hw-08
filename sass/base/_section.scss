@@ -19,29 +19,24 @@
   }
 }
 
-.section {
-  &-work-example {
-    @include for-phone {
-      display: none;
-    }
-    @include for-tablet {
-      display: none;
-    }
+.section-work-example {
+  display: none;
+  @include for-desktop {
+    display: flex;
   }
-  &-team {
-    @include for-desktop {
+}
+
+.section {
+  @include for-desktop {
+    padding: 94px 0px;
+    &-team {
       padding-top: 94px;
       padding-bottom: 94px;
     }
-  }
-  &-title {
-    @include for-desktop {
+    &-title {
       font-size: 36px;
       line-height: 1.16;
       margin-bottom: 50px;
     }
-  }
-  @include for-desktop {
-    padding: 94px 0px;
   }
 }

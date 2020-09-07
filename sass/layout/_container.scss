@@ -12,8 +12,9 @@
   @include for-tablet {
     width: 768px;
   }
-  @include for-desktop;
-  width: 1200px;
+  @include for-desktop {
+    width: 1200px;
+  }
 }
 
 .portfolio-container {
