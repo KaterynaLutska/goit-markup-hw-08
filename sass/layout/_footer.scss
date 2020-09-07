@@ -2,19 +2,6 @@ footer {
   background-color: #2f303a;
 }
 
-.footer-container {
-  padding-bottom: 60px;
-  padding-top: 60px;
-  text-align: center;
-  @include for-desktop {
-    text-align: start;
-  }
-}
-
-.footer-social {
-  padding-bottom: 60px;
-}
-
 .footer-title {
   display: block;
   margin-bottom: 20px;
@@ -26,23 +13,17 @@ footer {
 }
 
 .footer-container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  text-align: center;
   @include for-tablet {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 85px;
-    padding-left: 76px;
+    align-items: baseline;
+    justify-content: center;
   }
-}
-
-.address-footer-wrap {
-  @include for-tablet {
-    margin-right: 165px;
-  }
-  margin-bottom: 60px;
-}
-
-.footer-container {
   @include for-desktop {
+    text-align: start;
     display: flex;
     align-items: baseline;
     padding-bottom: 60px;
@@ -56,5 +37,28 @@ footer {
     & > div:last-child {
       width: calc(50% - 15px);
     }
+  }
+}
+
+.footer-social {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @include for-desktop {
+    margin: 0;
+  }
+}
+
+@include for-tablet {
+  .address-footer-wrap {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+  .footer-social {
+    width: 50%;
+    margin: 0;
+  }
+  input {
+    width: 450px;
   }
 }

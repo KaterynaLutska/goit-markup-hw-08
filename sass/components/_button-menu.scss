@@ -3,7 +3,10 @@
   align-items: center;
   padding: 0;
   background-color: #fff;
-
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
   @include for-tablet {
     display: none;
   }
