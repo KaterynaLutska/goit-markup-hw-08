@@ -1101,13 +1101,12 @@ button {
           justify-content: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .team-card {
-    width: 100%;
-  }
-  .team-card:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.team-card {
+  width: 100%;
+}
+
+.team-card:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
