@@ -62,6 +62,7 @@ button {
 }
 
 .button-modal {
+  padding: 0;
   position: absolute;
   display: inline-block;
   top: 8px;
@@ -75,7 +76,6 @@ button {
 }
 
 .btn-close {
-  padding: 0;
   width: 11px;
   height: 11px;
 }
