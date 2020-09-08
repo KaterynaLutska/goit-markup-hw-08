@@ -1,5 +1,4 @@
 .logo {
-  display: flex;
   @include font(700, 24px, 0.03em, $secondary-font-family);
   line-height: 1.16;
   color: #000000;
@@ -14,6 +13,7 @@
 
   &.header {
     padding: 24px 0 25px 0;
+    display: flex;
   }
 }
 

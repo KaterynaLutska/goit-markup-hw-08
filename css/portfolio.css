@@ -536,9 +536,6 @@ body.modal-open {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -557,6 +554,9 @@ body.modal-open {
 
 .logo.header {
   padding: 24px 0 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
