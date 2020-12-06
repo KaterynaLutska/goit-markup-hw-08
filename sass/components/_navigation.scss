@@ -32,16 +32,16 @@
 
 .navigation-items-link.current::after {
   content: "";
-  display: block;
-  position: absolute;
-  opacity: 1;
+  // display: block;
+  // position: absolute;
+  // opacity: 1;
 
   height: 4px;
   width: 100%;
   background-color: $accent-color;
   border-radius: 2px;
   bottom: -1px;
-  transition-property: babackground-color;
+  transition-property: background-color;
   transition-duration: $timing-function;
   transition-timing-function: $timing-function;
 }

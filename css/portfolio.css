@@ -805,16 +805,13 @@ button {
 
 .navigation-items-link.current::after {
   content: "";
-  display: block;
-  position: absolute;
-  opacity: 1;
   height: 4px;
   width: 100%;
   background-color: #2196f3;
   border-radius: 2px;
   bottom: -1px;
-  -webkit-transition-property: babackground-color;
-  transition-property: babackground-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
   -webkit-transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
           transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
